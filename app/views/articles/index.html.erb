@@ -1,0 +1,27 @@
+
+<div class="contenedor">
+
+  <p id="notice"><%= notice %></p>
+
+  <h1>Articulos</h1>
+  <div class="article-container">
+    <% @articles.each do |article| %>
+
+    <h2><%= article.title %></h2>
+    <p><%= article.body %></p>
+    <div class="article-actions">
+      <%= link_to 'Show', article %>
+      <%= link_to 'Edit', edit_article_path(article) %>
+      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+
+    <% end %>
+  </div>
+
+
+
+  <div class="article-actions">
+    <%= link_to 'New Article', new_article_path %>
+  </div>
+
+</div>

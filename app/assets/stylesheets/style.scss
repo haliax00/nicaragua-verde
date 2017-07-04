@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  background-color: #5FEB87;
+  padding: 10px 0;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar ul li {
+  list-style: none;
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+// temporal
+.contenedor {
+  width: 80%;
+  margin: 20px auto;
+// Articles styles
+}
+.article-container {
+  margin: 20px auto;
+}
+.article-actions {
+  margin: 20px 0;
+}
+.article-actions a {
+  color: #fff;
+  background: #afa;
+  
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.article-actions a:visited {
+
+}
